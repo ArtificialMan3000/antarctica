@@ -8,18 +8,56 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+<div style="display: none;">
+  <include src="build/img/sprite.svg"></include>
+</div>
 <div class="site-wrapper">
-  <header class="page-header">
-
+  <!-- .page-header--menu-open перестраивает хедер для показа меню -->
+  <!-- .page-header--absolute добавляется js-ом, вырывает хедер из потока в мобильной версии-->
+  <header class="page-header page-header--menu-open container">
+    <!-- .logo-link--blue перекрашивает логотип при открытом меню -->
+    <a class="page-header__logo page-header__logo logo-link">
+      <svg class="logo-link__img logo-link__img--blue" xmlns="http://www.w3.org/2000/svg" width="70" height="38">
+        <use xlink:href="#sprite-logo"></use>
+      </svg>
+    </a>
+    <!-- .burger--hide скрывает бургер при открытии меню-->
+    <button class="burger burger--hide" type="button" aria-label="Открыть меню">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+    <!-- .menu-close--hide скрывает крестик при закрытии меню-->
+    <button class="menu-close" type="button" aria-label="Закрыть меню">
+      <span class="visually-hidden">Закрыть меню</span>
+    </button>
+    <!-- .main-menu--show показывает меню, переключается с помощью js-->
+    <nav class="page-header__menu main-menu main-menu--show">
+      <ul class="main-menu__list">
+        <li class="main-menu__item">
+          <a href="#advantages" class="main-menu__link">Преимущества</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="#" class="main-menu__link">Направления</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="#cruises" class="main-menu__link">Ближайшие круизы</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="#contacts" class="main-menu__link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
   </header>
   <main>
     <h1 class="visually-hidden">Круизы в Антарктиду</h1>
+    <section class="envelope">
 
+    </section>
   </main>
   <footer class="page-footer">
 
   </footer>
 </div>
+<script src="js/menu.min.js"></script>
 <script src="js/script.min.js"></script>
 <script src="js/vendor/picturefill.min.js"></script>
 </body>

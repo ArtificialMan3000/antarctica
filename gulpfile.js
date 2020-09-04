@@ -96,7 +96,10 @@ gulp.task("server", function () {
     notify: false,
     open: true,
     cors: true,
-    ui: false
+    port: "3002",
+    ui: {
+      port: 3001
+    }
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));

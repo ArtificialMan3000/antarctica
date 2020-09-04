@@ -1,0 +1,42 @@
+.page-header {
+  display: flex;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  position: absolute;
+
+  @media (max-width: $tablet-width-max) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.page-header--menu-open {
+  @media (max-width: $mobile-width-max) {
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 41px;
+    position: static;
+    background-color: $light;
+  }
+}
+
+.page-header--absolute {
+  @media (max-width: $mobile-width-max) {
+    position: absolute;
+  }
+}
+
+.page-header__menu {
+  margin-left: auto;
+
+  @media (max-width: $mobile-width-max) {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 44px;
+  }
+}

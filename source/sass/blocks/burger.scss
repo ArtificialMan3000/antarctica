@@ -1,0 +1,22 @@
+.burger {
+  display: none;
+
+  @media (max-width: $mobile-width-max) {
+    display: block;
+    margin-left: auto;
+    margin-top: 4px;
+    width: 24px;
+    height: 14px;
+    background-color: transparent;
+    background-image: url("../img/burger-icon.svg");
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.burger--hide {
+  @media (max-width: $mobile-width-max) {
+    display: none;
+  }
+}
