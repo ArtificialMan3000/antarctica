@@ -1,42 +1,50 @@
-//Breakpoints
-$mobile-width: 320px;
-$tablet-width: 768px;
-$desktop-width: 1300px;
+// Breakpoints
+$desktop-width-max: 1366px;
+$desktop-width-min: 1024px;
+$tablet-width-max: 1023px;
+$tablet-width-min: 768px;
+$mobile-width-max: 767px;
+$mobile-width-min: 320px;
 
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
 
-//Content widthes
-$mobile-content-width: 280px;
-$tablet-content-width: 708px;
-$desktop-content-width: 1220px;
+// Font
+$text-font-family: "Montserrat", "Arial", sans-serif;
 
-//Font
-$title-font-family: "Font Name", "Arial", sans-serif;
-$text-font-family: "Arial", sans-serif;
+// general font sizings
+$small-font-size: 10px;
+$smaller-font-size: 14px;
+$regular-font-size: 16px;
+$larger-font-size: 18px;
 
-$text-font-size: 14px;
-$text2-font-size: 16px;
-$small-font-size: 12px;
-$title1-font-size: 36px;
-$title2-font-size: 24px;
-$title3-font-size: 16px;
+$title4-font-size: $larger-font-size;
 
-$text-line-height: 18px;
-$text2-line-height: 24px;
+// desktop font sizings
+$title1-desktop-font-size: 54px;
+$title2-desktop-font-size: 40px;
+$title3-desktop-font-size: 28px;
 
-//Colors
-$brand-color: #68b738;
-$brand-color-dark: #64a83b;
+// tablet font sizings
+$title1-tablet-font-size: 50px;
+$title2-tablet-font-size: 34px;
+$title3-tablet-font-size: 26px;
 
-$title-color: #111111;
-$title-color2: #222222;
-$text-color: #444444;
+// mobile font sizings
+$title1-mobile-font-size: 36px;
+$title2-mobile-font-size: 24px;
+$title3-mobile-font-size: 24px;
+
+// Colors
+$brand-color: #011C40;
 
 $white: #ffffff;
-$gray-light: #f2f2f2;
+$light: #F9FBFD;
 
-//Sizes
-$mobile-external-paddings: 20px;
-$tablet-external-paddings: 30px;
-$desktop-external-paddings: 40px;
+$text-color: $brand-color;
+$text-white-color: $light;
+
+// Sizes
+$desktop-external-paddings: 103px;
+$tablet-external-paddings: 45px;
+$mobile-external-paddings: 15px;
