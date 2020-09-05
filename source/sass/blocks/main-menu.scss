@@ -51,3 +51,12 @@
     color: $brand-color;
   }
 }
+
+.main-menu__link:hover,
+.main-menu__link:focus {
+  color: $hover-text-light-color;
+}
+
+.main-menu__link:active {
+  color: $active-text-light-color;
+}
