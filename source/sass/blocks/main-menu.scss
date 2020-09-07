@@ -48,15 +48,23 @@
   @media (max-width: $mobile-width-max) {
     font-size: 18px;
     line-height: 22px;
-    color: $brand-color;
+    color: $text-color;
   }
 }
 
 .main-menu__link:hover,
 .main-menu__link:focus {
   color: $hover-text-light-color;
+
+  @media (max-width: $mobile-width-max) {
+    color: $hover-text-color;
+  }
 }
 
 .main-menu__link:active {
   color: $active-text-light-color;
+
+  @media (max-width: $mobile-width-max) {
+    color: $active-text-color;
+  }
 }

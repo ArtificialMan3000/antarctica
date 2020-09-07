@@ -1,15 +1,15 @@
-//Сброс стилей у списков
+// Сброс стилей у списков
 @mixin list-reset() {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-//Центровщик
+// Центровщик
 @mixin container() {
   width: 100%;
-  padding-left: calc(50% - (#{$desktop-width-max} / 2) + #{$desktop-external-paddings});
-  padding-right: calc(50% - (#{$desktop-width-max} / 2) + #{$desktop-external-paddings});
+  padding-left: calc-external-padding($desktop-external-paddings);
+  padding-right: calc-external-padding($desktop-external-paddings);
 
   @media (max-width: $desktop-width-max) {
     padding-left: $desktop-external-paddings;

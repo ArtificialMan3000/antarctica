@@ -4,26 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,inital-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Круизы в Антарктиду</title>
+  <title>Круизы в Антарктику</title>
   <link rel="preload" href="fonts/montserrat/subset-Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 <div style="display: none;">
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="sprite-logo" viewBox="0 0 70 38">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M0.903517 31.125L14.6726 12.5429L18.4395 14.556L27.4026 0L32.9879 6.65881L35.0665 4.95532L43.1199 15.1755L48.8355 8.36191L64.8126 31.125L49.42 11.7689L47.0817 19.8984L49.225 26.3249L35.456 7.35558L35.3069 13.8279L43.1199 31.125L28.5064 4.33574L32.7282 18.8145L26.8181 4.72292L23.5706 14.0916L24.2198 7.97472L16.1013 30.0411L17.0753 20.75L13.6981 17.0338L0.903517 31.125Z"></path>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M69.4414 34.0314C47.641 16.428 13.7091 40.6289 0 31.2961C15.0723 44.5215 50.3019 22.1644 69.4414 34.0314Z"></path>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M70 35.4157C52.8956 24.5171 27.4568 39.6838 14.4189 36.1717C28.5467 43.0283 54.8482 27.8361 70 35.4157Z"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.903517 31.125L14.6726 12.5429L18.4395 14.556L27.4026 0L32.9879 6.65881L35.0665 4.95532L43.1199 15.1755L48.8355 8.36191L64.8126 31.125L49.42 11.7689L47.0817 19.8984L49.225 26.3249L35.456 7.35558L35.3069 13.8279L43.1199 31.125L28.5064 4.33574L32.7282 18.8145L26.8181 4.72292L23.5706 14.0916L24.2198 7.97472L16.1013 30.0411L17.0753 20.75L13.6981 17.0338L0.903517 31.125Z" fill="#F9FBFD"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M69.4414 34.0314C47.641 16.428 13.7091 40.6289 0 31.2961C15.0723 44.5215 50.3019 22.1644 69.4414 34.0314Z" fill="#F9FBFD"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M70 35.4157C52.8956 24.5171 27.4568 39.6838 14.4189 36.1717C28.5467 43.0283 54.8482 27.8361 70 35.4157Z" fill="#F9FBFD"></path>
 </symbol></svg>
 </div>
 <div class="site-wrapper">
   <!-- .page-header--menu-open перестраивает хедер для показа меню -->
   <!-- .page-header--absolute добавляется js-ом, вырывает хедер из потока в мобильной версии-->
   <header class="page-header page-header--menu-open container">
-    <!-- .logo-link--blue перекрашивает логотип при открытом меню -->
-    <a class="page-header__logo page-header__logo logo-link">
+    <a class="page-header__logo logo-link">
+      <!-- .logo-link__img--blue перекрашивает логотип при открытом меню -->
       <svg class="logo-link__img logo-link__img--blue" width="70" height="38" aria-labelledby="svg-heading-logo" xmlns="http://www.w3.org/2000/svg">
-        <title id="svg-heading-logo">Логотип круизов в Антарктиду</title>
+        <title id="svg-heading-logo">Логотип круизов в Антарктику</title>
         <use xlink:href="#sprite-logo"></use>
       </svg>
     </a>
@@ -54,13 +54,84 @@
     </nav>
   </header>
   <main>
-    <h1 class="visually-hidden">Круизы в Антарктиду</h1>
     <section class="envelope">
-
+      <h1 class="envelope__title">Круизы в&nbsp;Антарктику</h1>
+      <p class="envelope__text">
+        Волшебный мир айсбергов&nbsp;и&nbsp;пингвинов
+      </p>
+    </section>
+    <section class="about-cruise">
+      <div class="about-cruse__col-left">
+        <h2 class="about-cruise__title">Путешествие на&nbsp;край&nbsp;Земли</h2>
+        <p class="about-cruise__text">
+          Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики.
+          Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы сможете увидеть: ледяные айсберги,
+          несколько видов пингвинов, китов, морских котиков и многое другое.
+        </p>
+      </div>
+      <div class="about-cruise__col-right">
+        <picture>
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/about-img-mobile@1x.webp 1x, img/about-img-mobile@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1023px)" srcset="img/about-img-tablet@1x.webp 1x, img/about-img-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/about-img-desktop@1x.webp 1x, img/about-img-desktop@2x.webp 2x">
+          <!-- <img class="about-cruise__img"
+              srcset="
+                img/about-img-desktop@2x.jpg 1120w,
+                img/about-img-desktop@1x.jpg 560w,
+                img/about-img-tablet@2x.jpg 648w,
+                img/about-img-tablet@1x.jpg 324w,
+                img/about-img-mobile@2x.jpg 580w,
+                img/about-img-mobile@1x.jpg 290w"
+              sizes="
+                (max-width: 767px) 290px,
+                (max-width: 1023px) 324px,
+                560px"
+              src="img/about-img-desktop@1x.jpg" width="560" height="301" alt="Три пингвина"> -->
+          <img class="about-cruise__img" srcset="
+                img/about-img-desktop@2x.jpg 2x,
+                img/about-img-desktop@1x.jpg 1x" src="img/about-img-desktop@1x.jpg" width="560" height="301" alt="Три пингвина">
+        </picture>
+      </div>
     </section>
   </main>
-  <footer class="page-footer">
-
+  <footer class="page-footer container">
+    <a class="page-footer__logo logo-link">
+      <svg class="logo-link__img" width="70" height="38" aria-labelledby="svg-footer-logo" xmlns="http://www.w3.org/2000/svg">
+        <title id="svg-footer-logo">Логотип круизов в Антарктику</title>
+        <use xlink:href="#sprite-logo"></use>
+      </svg>
+    </a>
+    <ul class="page-footer__menu footer-menu">
+      <li class="footer-menu__item">
+        <a class="footer-menu__link" href="#advantages">Преимущества</a>
+      </li>
+      <li class="footer-menu__item">
+        <a class="footer-menu__link" href="#">Направления</a>
+      </li>
+      <li class="footer-menu__item">
+        <a class="footer-menu__link" href="#cruises">Ближайшие круизы</a>
+      </li>
+      <li class="footer-menu__item">
+        <a class="footer-menu__link" href="#contacts">Контакты</a>
+      </li>
+    </ul>
+    <ul class="page-footer__socials socials">
+      <li class="socials__item">
+        <a class="socials__link socials__link--facebook" href="facebook.com">
+          <span class="visually-hidden">Мы в Facebook</span>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link socials__link--instagram" href="instagram.com">
+          <span class="visually-hidden">Мы в Instagram</span>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link socials__link--twitter" href="twitter.com">
+          <span class="visually-hidden">Мы в Twitter</span>
+        </a>
+      </li>
+    </ul>
   </footer>
 </div>
 <script src="js/vendor.js"></script>

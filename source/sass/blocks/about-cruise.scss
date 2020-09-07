@@ -1,0 +1,80 @@
+.about-cruise {
+  @include container();
+  display: flex;
+  align-items: flex-start;
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  @media (max-width: $tablet-width-max) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    flex-direction: column;
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+}
+
+.about-cruise__title {
+  margin: 0;
+  margin-top: 56px;
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+
+  @media (max-width: $tablet-width-max) {
+    margin-top: -9px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-top: -8px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+  }
+}
+
+.about-cruise__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.about-cruise__col-right {
+  margin-left: 85px;
+  flex-shrink: 0;
+
+  @media (max-width: $tablet-width-max) {
+    margin-left: 30px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-top: 33px;
+    margin-left: 0;
+  }
+}
+
+.about-cruise__img {
+  width: 560px;
+  height: 301px;
+  object-fit: cover;
+
+  @media (max-width: $tablet-width-max) {
+    width: 324px;
+    height: 264px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: 290px;
+    height: 186px;
+  }
+}
+
+

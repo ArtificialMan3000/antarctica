@@ -25,7 +25,7 @@ gulp.task('css', function () {
       .pipe(postcss([
         autoprefixer()
       ]))
-      .pipe(csso())
+      // .pipe(csso())
       .pipe(rename('style.min.css'))
       .pipe(sourcemap.write('.'))
       .pipe(gulp.dest('build/css'))
@@ -37,7 +37,7 @@ gulp.task('images', function () {
       .pipe(imagemin([
         imagemin.optipng({optimizationLevel: 3}),
         imagemin.jpegtran({progressive: true}),
-        imagemin.svgo()
+        // imagemin.svgo()
       ]))
       .pipe(gulp.dest('source/img'));
 });
@@ -65,7 +65,7 @@ gulp.task('html', function () {
 });
 
 gulp.task('js', function (done) {
-  gulp.src('source/js/*.js')
+  gulp.src(['source/js/menu.js', 'source/js/main.js'])
       .pipe(concat('script.js'))
       .pipe(gulp.dest('build/js'));
 

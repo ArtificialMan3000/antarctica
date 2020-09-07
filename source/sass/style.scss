@@ -1,5 +1,6 @@
 @import "fonts.scss";
 @import "variables.scss";
+@import "functions.scss";
 @import "mixins.scss";
 
 // Общие стили
@@ -16,7 +17,12 @@
 @import "blocks/main-menu.scss";
 @import "blocks/burger.scss";
 @import "blocks/menu-close.scss";
+@import "blocks/footer-menu.scss";
+@import "blocks/socials.scss";
 
 // Крупные блоки
+@import "blocks/site-wrapper.scss";
 @import "blocks/page-header.scss";
+@import "blocks/page-footer.scss";
 @import "blocks/envelope.scss";
+@import "blocks/about-cruise.scss";
