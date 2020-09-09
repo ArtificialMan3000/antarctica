@@ -1,5 +1,9 @@
 .cruise-description {
-  background-color: $brand-color;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  position: relative;
   color: $brand-second-color;
 }
 
@@ -8,13 +12,25 @@
 }
 
 .cruise-description__title {
+  margin: 0;
+  margin-bottom: 1px;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
 }
 
 .cruise-description__text {
+  margin: 0;
+  margin-bottom: 11px;
   font-size: 14px;
   line-height: 20px;
   color: rgb(216, 216, 217);
+}
+
+.cruise-description__button {
+  margin-top: 24px;
+}
+
+.cruise-description__button:focus {
+  display: block;
 }
