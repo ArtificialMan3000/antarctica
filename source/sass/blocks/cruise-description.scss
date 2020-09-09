@@ -1,8 +1,4 @@
 .cruise-description {
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 35px;
-  padding-bottom: 35px;
   position: relative;
   color: $brand-second-color;
 }
@@ -25,12 +21,4 @@
   font-size: 14px;
   line-height: 20px;
   color: rgb(216, 216, 217);
-}
-
-.cruise-description__button {
-  margin-top: 24px;
-}
-
-.cruise-description__button:focus {
-  display: block;
 }
