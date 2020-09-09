@@ -45,6 +45,10 @@
   margin: 0;
   font-size: 16px;
   line-height: 24px;
+
+  @media (max-width: $tablet-width-max) and (min-width: $tablet-width-min) {
+    margin-bottom: -6px;
+  }
 }
 
 .about-cruise__col-right {
@@ -62,6 +66,7 @@
 }
 
 .about-cruise__img {
+  display: block;
   width: 560px;
   height: 301px;
   object-fit: cover;

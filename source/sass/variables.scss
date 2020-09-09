@@ -36,40 +36,36 @@ $title2-mobile-font-size: 24px;
 $title3-mobile-font-size: 24px;
 
 // Colors
-$hover-lightness-shift: 20%;
-$active-lightness-shift: -20%;
+
+$white: rgba(249, 251, 253, 1); // #F9FBFD
 
 $brand-color: rgba(1, 28, 64, 1); // #011C40
-$hover-brand-color: scale-color($brand-color, $lightness: $hover-lightness-shift);
-$active-brand-color: scale-color($brand-color, $lightness: $active-lightness-shift);
-
-$white: rgba(255, 255, 255, 1);
-$light: rgba(249, 251, 253, 1); // #F9FBFD
-$hover-light: scale-color($light, $lightness: $hover-lightness-shift);
-$active-light: scale-color($light, $lightness: $active-lightness-shift);
+$brand-second-color: $white;
 
 $text-color: $brand-color;
-$text-light-color: $light;
+$text-second-color: $brand-second-color;
 
 // Hover state colors
 $hover-lightness-shift: -20%;
 
-$hover-brand-color: scale-color($brand-color, $lightness: $hover-lightness-shift);
+$hover-white: scale-color($white, $lightness: $hover-lightness-shift);
 
-$hover-light: scale-color($light, $lightness: $hover-lightness-shift);
+$hover-brand-color: scale-color($brand-color, $lightness: $hover-lightness-shift);
+$hover-brand-second-color: scale-color($brand-second-color, $lightness: $hover-lightness-shift);
 
 $hover-text-color: $hover-brand-color;
-$hover-text-light-color: $hover-light;
+$hover-text-second-color: $hover-brand-second-color;
 
 // Active state colors
 $active-lightness-shift: 20%;
 
-$active-brand-color: scale-color($brand-color, $lightness: $active-lightness-shift);
+$active-white: scale-color($white, $lightness: $active-lightness-shift);
 
-$active-light: scale-color($light, $lightness: $active-lightness-shift);
+$active-brand-color: scale-color($brand-color, $lightness: $active-lightness-shift);
+$active-brand-second-color: scale-color($brand-second-color, $lightness: $active-lightness-shift);
 
 $active-text-color: $active-brand-color;
-$active-text-light-color: $active-light;
+$active-text-second-color: $active-brand-second-color;
 
 // Sizes
 $desktop-external-paddings: 103px;

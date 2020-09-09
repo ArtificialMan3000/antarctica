@@ -38,7 +38,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  color: $text-light-color;
+  color: $text-second-color;
 
   @media (max-width: $tablet-width-max) {
     font-size: 14px;
@@ -54,7 +54,7 @@
 
 .main-menu__link:hover,
 .main-menu__link:focus {
-  color: $hover-text-light-color;
+  color: $hover-text-second-color;
 
   @media (max-width: $mobile-width-max) {
     color: $hover-text-color;
@@ -62,7 +62,7 @@
 }
 
 .main-menu__link:active {
-  color: $active-text-light-color;
+  color: $active-text-second-color;
 
   @media (max-width: $mobile-width-max) {
     color: $active-text-color;

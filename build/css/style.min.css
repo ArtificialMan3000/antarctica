@@ -338,6 +338,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   min-width: 320px;
+  background-color: #f9fbfd;
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -381,6 +382,34 @@ img {
   overflow: hidden;
   border: none;
   clip: rect(0 0 0 0); }
+
+.button {
+  display: block;
+  width: 100%;
+  max-width: 303px;
+  padding-top: 9px;
+  padding-bottom: 11px;
+  background-color: #f9fbfd;
+  color: #011c40;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center; }
+
+.br {
+  display: none; }
+
+@media (min-width: 1024px) {
+  .br--desktop {
+    display: block; } }
+
+@media (max-width: 1023px) and (min-width: 768px) {
+  .br--tablet {
+    display: block; } }
+
+@media (max-width: 767px) {
+  .br--mobile {
+    display: block; } }
 
 .logo-link {
   display: block; }
@@ -638,6 +667,153 @@ img {
 .socials__link--twitter::before {
   background-image: url("../img/twitter-icon.svg"); }
 
+.advantage {
+  max-width: 31.03%;
+  margin-right: 3.45%;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  position: relative;
+  background-color: #f9fbfd; }
+  @media (max-width: 1023px) {
+    .advantage {
+      max-width: 30.38%;
+      margin-right: 4.425%;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 25px;
+      padding-bottom: 25px; } }
+  @media (max-width: 767px) {
+    .advantage {
+      max-width: none;
+      margin-right: 0;
+      margin-bottom: 30px; } }
+
+.advantage:nth-child(3n) {
+  margin-right: 0; }
+
+@media (min-width: 768px) {
+  .advantage:nth-child(n+4) {
+    margin-top: 30px; } }
+
+@media (max-width: 767px) {
+  .advantage:last-child {
+    margin-bottom: 0; } }
+
+.advantage::before {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: 100%; }
+
+.advantage--liner::before {
+  width: 27px;
+  height: 32px;
+  top: 30px;
+  left: 30px;
+  background-image: url("../img/liner-icon.svg"); }
+  @media (max-width: 1023px) {
+    .advantage--liner::before {
+      width: 21px;
+      height: 26px;
+      top: 25px;
+      left: 20px; } }
+
+.advantage--check-marks::before {
+  width: 38px;
+  height: 21px;
+  top: 35px;
+  left: 30px;
+  background-image: url("../img/check-marks-icon.svg"); }
+  @media (max-width: 1023px) {
+    .advantage--check-marks::before {
+      width: 33px;
+      height: 19px;
+      top: 29px;
+      left: 20px; } }
+
+.advantage--boat::before {
+  width: 42px;
+  height: 15px;
+  top: 38px;
+  left: 30px;
+  background-image: url("../img/boat-icon.svg"); }
+  @media (max-width: 1023px) {
+    .advantage--boat::before {
+      width: 38px;
+      height: 13px;
+      top: 32px;
+      left: 20px; } }
+
+.advantage__title {
+  margin: 0;
+  margin-top: 51px;
+  margin-bottom: 9px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px; }
+  @media (max-width: 1023px) {
+    .advantage__title {
+      margin-right: -5px;
+      margin-top: 46px;
+      line-height: 25px; } }
+  @media (max-width: 767px) {
+    .advantage__title {
+      max-width: 200px; } }
+
+.advantage__text {
+  margin: 0;
+  margin-right: -2px;
+  margin-bottom: -5px;
+  font-size: 14px;
+  line-height: 20px; }
+
+@media (max-width: 1023px) and (min-width: 768px) {
+  .advantage--boat__br {
+    display: none; } }
+
+.cruise-card {
+  width: 22.4138%;
+  margin-left: 1.2931%;
+  margin-right: 1.2931%;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  position: relative;
+  background-color: #011c40;
+  color: #f9fbfd; }
+
+.cruise-card__img {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.cruise-card__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px; }
+
+.cruise-description {
+  background-color: #011c40;
+  color: #f9fbfd; }
+
+.cruise-description__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+.cruise-description__title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px; }
+
+.cruise-description__text {
+  font-size: 14px;
+  line-height: 20px;
+  color: #d8d8d9; }
+
 .site-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -653,7 +829,8 @@ img {
   display: flex;
   padding-top: 35px;
   padding-bottom: 35px;
-  position: absolute; }
+  position: absolute;
+  color: #f9fbfd; }
   @media (max-width: 1023px) {
     .page-header {
       padding-top: 30px;
@@ -694,7 +871,8 @@ img {
   margin-top: 3327px;
   padding-top: 50px;
   padding-bottom: 50px;
-  background-color: #011c40; }
+  background-color: #011c40;
+  color: #f9fbfd; }
   @media (max-width: 1023px) {
     .page-footer {
       margin-top: 4304px; } }
@@ -741,7 +919,8 @@ img {
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
-  background-color: #255eac; }
+  background-color: #255eac;
+  color: #f9fbfd; }
   @media (max-width: 1366px) {
     .envelope {
       padding-left: 103px;
@@ -869,6 +1048,9 @@ img {
   margin: 0;
   font-size: 16px;
   line-height: 24px; }
+  @media (max-width: 1023px) and (min-width: 768px) {
+    .about-cruise__text {
+      margin-bottom: -6px; } }
 
 .about-cruise__col-right {
   margin-left: 85px;
@@ -883,6 +1065,7 @@ img {
       margin-left: 0; } }
 
 .about-cruise__img {
+  display: block;
   width: 560px;
   height: 301px;
   -o-object-fit: cover;
@@ -895,5 +1078,113 @@ img {
     .about-cruise__img {
       width: 290px;
       height: 186px; } }
+
+.advantages {
+  width: 100%;
+  padding-left: calc(50% - (1366px / 2) + 103px);
+  padding-right: calc(50% - (1366px / 2) + 103px);
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-image: url("../img/advantages-bg-desktop@1x.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #e3ecf6;
+  color: #011c40; }
+  @media (max-width: 1366px) {
+    .advantages {
+      padding-left: 103px;
+      padding-right: 103px; } }
+  @media (max-width: 1023px) {
+    .advantages {
+      padding-left: 45px;
+      padding-right: 45px; } }
+  @media (max-width: 767px) {
+    .advantages {
+      padding-left: 15px;
+      padding-right: 15px; } }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .advantages {
+      background-image: url("../img/advantages-bg-desktop@2x.jpg"); } }
+  @media (max-width: 1023px) {
+    .advantages {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      background-image: url("../img/advantages-bg-tablet@1x.jpg"); } }
+  @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+    .advantages {
+      background-image: url("../img/advantages-bg-tablet@2x.jpg"); } }
+  @media (max-width: 767px) {
+    .advantages {
+      padding-top: 65px;
+      padding-bottom: 65px;
+      background-image: url("../img/advantages-bg-mobile@1x.jpg"); } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+    .advantages {
+      background-image: url("../img/advantages-bg-mobile@2x.jpg"); } }
+
+.advantages__title {
+  margin: 0;
+  margin-top: -10px;
+  margin-bottom: 49px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  text-align: center; }
+  @media (max-width: 1023px) {
+    .advantages__title {
+      font-size: 26px;
+      line-height: 39px; } }
+  @media (max-width: 767px) {
+    .advantages__title {
+      margin-top: -8px;
+      margin-bottom: 30px;
+      font-size: 24px;
+      line-height: 36px; } }
+
+.advantages__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.cruises {
+  width: 100%;
+  padding-left: calc(50% - (1366px / 2) + 103px);
+  padding-right: calc(50% - (1366px / 2) + 103px);
+  padding-top: 120px;
+  padding-bottom: 120px; }
+  @media (max-width: 1366px) {
+    .cruises {
+      padding-left: 103px;
+      padding-right: 103px; } }
+  @media (max-width: 1023px) {
+    .cruises {
+      padding-left: 45px;
+      padding-right: 45px; } }
+  @media (max-width: 767px) {
+    .cruises {
+      padding-left: 15px;
+      padding-right: 15px; } }
+
+.cruises__title {
+  margin-bottom: 60px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px; }
+
+.cruises__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 /*# sourceMappingURL=style.min.css.map */

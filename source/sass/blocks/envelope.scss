@@ -9,6 +9,7 @@
   background-position: center top;
   background-repeat: no-repeat;
   background-color: rgb(37,94,172);
+  color: $text-second-color;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/envelope-bg-desktop@2x.jpg");
@@ -45,7 +46,7 @@
   font-weight: 700;
   font-size: 54px;
   line-height: 66px;
-  color: $text-light-color;
+  color: $text-second-color;
 
   @media (max-width: $tablet-width-max) {
     margin-top: 268px;
@@ -64,7 +65,7 @@
   margin: 0;
   font-size: 20px;
   line-height: 24px;
-  color: $text-light-color;
+  color: $text-second-color;
 
   @media (max-width: $tablet-width-max) {
     font-size: 18px;

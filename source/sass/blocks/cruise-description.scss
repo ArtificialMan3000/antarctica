@@ -1,0 +1,20 @@
+.cruise-description {
+  background-color: $brand-color;
+  color: $brand-second-color;
+}
+
+.cruise-description__list {
+  @include list-reset();
+}
+
+.cruise-description__title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.cruise-description__text {
+  font-size: 14px;
+  line-height: 20px;
+  color: rgb(216, 216, 217);
+}

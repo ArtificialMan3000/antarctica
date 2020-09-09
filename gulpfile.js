@@ -37,9 +37,15 @@ gulp.task('images', function () {
       .pipe(imagemin([
         imagemin.optipng({optimizationLevel: 3}),
         imagemin.jpegtran({progressive: true}),
-        // imagemin.svgo()
+        imagemin.svgo({
+          plugins: [
+            {removeViewBox: false},
+            {cleanupIDs: false}
+          ]
+        })
       ]))
-      .pipe(gulp.dest('source/img'));
+      // .pipe(gulp.dest('source/img'));
+      .pipe(gulp.dest('build/img'));
 });
 
 gulp.task('webp', function () {

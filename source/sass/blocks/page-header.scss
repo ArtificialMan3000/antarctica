@@ -3,6 +3,7 @@
   padding-top: 35px;
   padding-bottom: 35px;
   position: absolute;
+  color: $text-second-color;
 
   @media (max-width: $tablet-width-max) {
     padding-top: 30px;
@@ -21,7 +22,7 @@
     padding-top: 20px;
     padding-bottom: 41px;
     position: static;
-    background-color: $light;
+    background-color: $brand-second-color;
   }
 }
 

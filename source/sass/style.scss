@@ -13,12 +13,16 @@
 // Мелкие блоки
 @import "blocks/visually-hidden.scss";
 @import "blocks/button.scss";
+@import "blocks/br.scss";
 @import "blocks/logo-link.scss";
 @import "blocks/main-menu.scss";
 @import "blocks/burger.scss";
 @import "blocks/menu-close.scss";
 @import "blocks/footer-menu.scss";
 @import "blocks/socials.scss";
+@import "blocks/advantage.scss";
+@import "blocks/cruise-card.scss";
+@import "blocks/cruise-description.scss";
 
 // Крупные блоки
 @import "blocks/site-wrapper.scss";
@@ -26,3 +30,5 @@
 @import "blocks/page-footer.scss";
 @import "blocks/envelope.scss";
 @import "blocks/about-cruise.scss";
+@import "blocks/advantages.scss";
+@import "blocks/cruises.scss";

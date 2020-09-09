@@ -1,0 +1,21 @@
+.br {
+  display: none;
+}
+
+.br--desktop {
+  @media (min-width: $desktop-width-min) {
+    display: block;
+  }
+}
+
+.br--tablet {
+  @media (max-width: $tablet-width-max) and (min-width: $tablet-width-min) {
+    display: block;
+  }
+}
+
+.br--mobile {
+  @media (max-width: $mobile-width-max) {
+    display: block;
+  }
+}

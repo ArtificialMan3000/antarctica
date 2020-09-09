@@ -1,0 +1,18 @@
+.cruises {
+  @include container();
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.cruises__title {
+  margin-bottom: 60px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+}
+
+.cruises__list {
+  @include list-reset();
+  display: flex;
+  flex-wrap: wrap;
+}
