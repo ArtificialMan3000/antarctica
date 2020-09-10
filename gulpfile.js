@@ -121,6 +121,6 @@ gulp.task('refresh', function (done) {
 
 gulp.task('img-opt', gulp.series('images', 'webp'));
 
-gulp.task('build', gulp.series('clean', 'copy', 'css', 'js', 'sprite', 'html'));
+gulp.task('build', gulp.series('clean', 'copy', 'css', 'js', 'sprite', 'html', 'img-opt'));
 
 gulp.task('start', gulp.series('build', 'server'));
