@@ -377,6 +377,57 @@
         </li>
       </ul>
     </section>
+    <section id="booking" class="booking">
+      <div class="booking__description">
+        <h2 class="booking__title">Раннее бронирование</h2>
+        <p class="booking__text">
+          Забронируйте тур <br class="br br--mobile">за 3-6 месяцев до&nbsp;даты выезда и сэкономьте до 50%
+        </p>
+      </div>
+      <div class="booking__form-holder booking-form">
+        <p class="booking-form__text">
+          Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в&nbsp;ближайшее время
+        </p>
+        <form class="booking-form__form" action="/" method="post" enctype="multipart/form-data">
+          <input id="booking-name" type="text" required="" placeholder="Валерия">
+          <label for="booking_name">Имя</label>
+          <input id="booking_phone" type="tel" required="" placeholder="89236889975">
+          <label for="booking_phone">Телефон</label>
+          <input id="booking_email" type="email" required="" placeholder="grishaewa.lera@gmail.com">
+          <label for="booking_email">Email</label>
+          <input id="booking-personal" type="checkbox" required="">
+          <label for="booking-personal">Я согласен на обработку моих&nbsp;персональных данных</label>
+          <button class="button" type="submit">Оставить заявку</button>
+        </form>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="contacts__col-left">
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+          <source media="(max-width: 1023px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+          <source srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+          <img class="contacts__map" src="img/map-desktop@1x.jpg" alt="Карта проезда" width="560" height="306">
+        </picture>
+      </div>
+      <div class="contacts__col-right">
+        <p class="contacts__text">
+          У вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и мы вам все расскажем.
+        </p>
+        <address class="contacts__address">
+          <ul class="contacts__list">
+            <li class="contacts__item contacts__item--address">
+              г. Санкт Петербург, ул.&nbsp;Большая Конюшенная, 19/8
+            </li>
+            <li class="contacts__item contacts__item--phone">
+              <a class="contacts__phone-link" href="tel:88002000000">
+                8-800-200-00-00
+              </a>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </section>
   </main>
   <footer class="page-footer container">
     <a class="page-footer__logo logo-link">
