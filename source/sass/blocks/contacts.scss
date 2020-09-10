@@ -1,0 +1,141 @@
+.contacts {
+  @include container();
+  display: flex;
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  @media (max-width: $tablet-width-max) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    flex-direction: column;
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+}
+
+.contacts__col-left {
+  flex-shrink: 0;
+  width: 560px;
+  margin-right: auto;
+
+  @media (max-width: 1280px) and (min-width: $desktop-width-min) {
+    margin-right: 20px;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    width: 324px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 14px;
+    order: 1;
+  }
+}
+
+.contacts__map {
+  display: block;
+  width: 560px;
+  height: 306px;
+
+  @media (max-width: $tablet-width-max) {
+    width: 324px;
+    height: 335px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: 290px;
+    height: 316px;
+  }
+}
+
+.contacts__col-right {
+  width: 500px;
+
+  @media (max-width: $tablet-width-max) {
+    width: 324px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: 100%;
+  }
+}
+
+.contacts__text {
+  margin: 0;
+  margin-top: 75px;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+
+  @media (max-width: $tablet-width-max) {
+    margin-top: 66px;
+    margin-bottom: 28px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-top: -7px;
+  }
+}
+
+.contacts__address {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.contacts__list {
+  @include list-reset();
+}
+
+.contacts__item {
+  margin-bottom: 22px;
+  padding-left: 28px;
+  position: relative;
+
+  @media (max-width: $tablet-width-max) {
+    max-width: 290px;
+    margin-bottom: 21px;
+  }
+}
+
+.contacts__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.contacts__item--address::before {
+  width: 18px;
+  height: 23px;
+  background-image: url("../img/mark-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  @media (max-width: $tablet-width-max) {
+    top: 3px;
+  }
+}
+
+.contacts__item--phone::before {
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/phone-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  @media (max-width: $tablet-width-max) {
+    top: 1px;
+  }
+}
+
+.contacts__phone-link {
+  color: $text-color;
+}

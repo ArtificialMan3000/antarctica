@@ -992,9 +992,9 @@ img {
       line-height: 25px;
       text-align: center; } }
 
-.booking-form__form input[type="text"],
-.booking-form__form input[type="tel"],
-.booking-form__form input[type="email"] {
+.booking-form form input[type="text"],
+.booking-form form input[type="tel"],
+.booking-form form input[type="email"] {
   display: block;
   width: 100%;
   margin-bottom: 20px;
@@ -1008,50 +1008,50 @@ img {
   font-size: 14px;
   line-height: 21px; }
 
-.booking-form__form input::-webkit-input-placeholder {
+.booking-form form input::-webkit-input-placeholder {
   color: #011c40; }
 
-.booking-form__form input::-moz-placeholder {
+.booking-form form input::-moz-placeholder {
   color: #011c40; }
 
-.booking-form__form input:-ms-input-placeholder {
+.booking-form form input:-ms-input-placeholder {
   color: #011c40; }
 
-.booking-form__form input::-ms-input-placeholder {
+.booking-form form input::-ms-input-placeholder {
   color: #011c40; }
 
-.booking-form__form input::placeholder {
+.booking-form form input::placeholder {
   color: #011c40; }
 
-.booking-form__form input[type="checkbox"] {
+.booking-form form input[type="checkbox"] {
   margin-right: 1px;
   width: 18px;
   height: 18px; }
   @media (max-width: 767px) {
-    .booking-form__form input[type="checkbox"] {
+    .booking-form form input[type="checkbox"] {
       width: 20px;
       height: 20px;
       margin-right: 4px;
       vertical-align: top; } }
 
-.booking-form__form input[type="checkbox"] + label {
+.booking-form form input[type="checkbox"] + label {
   display: inline-block;
   border: none;
   vertical-align: text-top;
   font-size: 10px;
   line-height: 13px; }
   @media (max-width: 767px) {
-    .booking-form__form input[type="checkbox"] + label {
+    .booking-form form input[type="checkbox"] + label {
       max-width: 165px;
       vertical-align: baseline;
       line-height: 12px; } }
 
-.booking-form__button {
+.booking-form form button {
   margin-top: 23px;
   padding-top: 11px;
   padding-bottom: 11px; }
   @media (max-width: 767px) {
-    .booking-form__button {
+    .booking-form form button {
       margin-top: 22px; } }
 
 .booking-form__form input[type="text"] + label,
@@ -1121,21 +1121,16 @@ img {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-top: 3327px;
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: #011c40;
   color: #f9fbfd; }
-  @media (max-width: 1023px) {
-    .page-footer {
-      margin-top: 4304px; } }
   @media (max-width: 767px) {
     .page-footer {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      margin-top: 6586px;
       padding-top: 40px;
       padding-bottom: 30px; } }
 
@@ -1562,5 +1557,145 @@ img {
       max-width: 260px;
       font-size: 16px;
       line-height: 22px; } }
+
+.contacts {
+  width: 100%;
+  padding-left: calc(50% - (1366px / 2) + 103px);
+  padding-right: calc(50% - (1366px / 2) + 103px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 120px;
+  padding-bottom: 120px; }
+  @media (max-width: 1366px) {
+    .contacts {
+      padding-left: 103px;
+      padding-right: 103px; } }
+  @media (max-width: 1023px) {
+    .contacts {
+      padding-left: 45px;
+      padding-right: 45px; } }
+  @media (max-width: 767px) {
+    .contacts {
+      padding-left: 15px;
+      padding-right: 15px; } }
+  @media (max-width: 1023px) {
+    .contacts {
+      padding-top: 100px;
+      padding-bottom: 100px; } }
+  @media (max-width: 767px) {
+    .contacts {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      padding-top: 65px;
+      padding-bottom: 65px; } }
+
+.contacts__col-left {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 560px;
+  margin-right: auto; }
+  @media (max-width: 1280px) and (min-width: 1024px) {
+    .contacts__col-left {
+      margin-right: 20px; } }
+  @media (max-width: 1023px) {
+    .contacts__col-left {
+      width: 324px; } }
+  @media (max-width: 767px) {
+    .contacts__col-left {
+      width: 290px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 14px;
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1; } }
+
+.contacts__map {
+  display: block;
+  width: 560px;
+  height: 306px; }
+  @media (max-width: 1023px) {
+    .contacts__map {
+      width: 324px;
+      height: 335px; } }
+  @media (max-width: 767px) {
+    .contacts__map {
+      width: 290px;
+      height: 316px; } }
+
+.contacts__col-right {
+  width: 500px; }
+  @media (max-width: 1023px) {
+    .contacts__col-right {
+      width: 324px; } }
+  @media (max-width: 767px) {
+    .contacts__col-right {
+      width: 100%; } }
+
+.contacts__text {
+  margin: 0;
+  margin-top: 75px;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px; }
+  @media (max-width: 1023px) {
+    .contacts__text {
+      margin-top: 66px;
+      margin-bottom: 28px; } }
+  @media (max-width: 767px) {
+    .contacts__text {
+      margin-top: -7px; } }
+
+.contacts__address {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px; }
+
+.contacts__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+.contacts__item {
+  margin-bottom: 22px;
+  padding-left: 28px;
+  position: relative; }
+  @media (max-width: 1023px) {
+    .contacts__item {
+      max-width: 290px;
+      margin-bottom: 21px; } }
+
+.contacts__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.contacts__item--address::before {
+  width: 18px;
+  height: 23px;
+  background-image: url("../img/mark-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+  @media (max-width: 1023px) {
+    .contacts__item--address::before {
+      top: 3px; } }
+
+.contacts__item--phone::before {
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/phone-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+  @media (max-width: 1023px) {
+    .contacts__item--phone::before {
+      top: 1px; } }
+
+.contacts__phone-link {
+  color: #011c40; }
 
 /*# sourceMappingURL=style.min.css.map */

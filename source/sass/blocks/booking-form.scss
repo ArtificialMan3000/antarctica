@@ -44,9 +44,9 @@
   }
 }
 
-.booking-form__form input[type="text"],
-.booking-form__form input[type="tel"],
-.booking-form__form input[type="email"] {
+.booking-form form input[type="text"],
+.booking-form form input[type="tel"],
+.booking-form form input[type="email"] {
   display: block;
   width: 100%;
   margin-bottom: 20px;
@@ -61,11 +61,11 @@
   line-height: 21px;
 }
 
-.booking-form__form input::placeholder {
+.booking-form form input::placeholder {
   color: $text-color;
 }
 
-.booking-form__form input[type="checkbox"] {
+.booking-form form input[type="checkbox"] {
   margin-right: 1px;
   width: 18px;
   height: 18px;
@@ -78,7 +78,7 @@
   }
 }
 
-.booking-form__form input[type="checkbox"] + label {
+.booking-form form input[type="checkbox"] + label {
   display: inline-block;
   border: none;
   vertical-align: text-top;
@@ -92,7 +92,7 @@
   }
 }
 
-.booking-form__button {
+.booking-form form button {
   margin-top: 23px;
   padding-top: 11px;
   padding-bottom: 11px;
