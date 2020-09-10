@@ -1,0 +1,123 @@
+.booking-form {
+  max-width: 403px;
+  margin-left: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: $brand-color;
+  color: $text-second-color;
+  box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
+
+  @media (max-width: 1100px) {
+    margin-left: 20px;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 52px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-top: 34px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.booking-form__text {
+  margin: 0;
+  margin-top: -6px;
+  margin-bottom: 27px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+
+  @media (max-width: $mobile-width-max) {
+    margin-top: -5px;
+    margin-bottom: 28px;
+    line-height: 25px;
+    text-align: center;
+  }
+}
+
+.booking-form__form input[type="text"],
+.booking-form__form input[type="tel"],
+.booking-form__form input[type="email"] {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  border: none;
+  background-color: $brand-second-color;
+  color: $text-color;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.booking-form__form input::placeholder {
+  color: $text-color;
+}
+
+.booking-form__form input[type="checkbox"] {
+  margin-right: 1px;
+  width: 18px;
+  height: 18px;
+
+  @media (max-width: $mobile-width-max) {
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    vertical-align: top;
+  }
+}
+
+.booking-form__form input[type="checkbox"] + label {
+  display: inline-block;
+  border: none;
+  vertical-align: text-top;
+  font-size: 10px;
+  line-height: 13px;
+
+  @media (max-width: $mobile-width-max) {
+    max-width: 165px;
+    vertical-align: baseline;
+    line-height: 12px;
+  }
+}
+
+.booking-form__button {
+  margin-top: 23px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+
+  @media (max-width: $mobile-width-max) {
+    margin-top: 22px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.booking-form__form input[type="text"] + label,
+.booking-form__form input[type="tel"] + label,
+.booking-form__form input[type="email"] + label {
+  @include visually-hidden();
+}
