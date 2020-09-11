@@ -3,11 +3,49 @@
   color: $brand-second-color;
 }
 
-.cruise-description__list {
-  @include list-reset();
+.cruise-description__title {
+  margin: 0;
+  // margin-left: 5px;
+  // margin-top: auto;
+  // margin-bottom: -13px;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+
+  // @media (max-width: $tablet-width-max) {
+  //   margin-left: 0;
+  //   margin-bottom: -9px;
+  // }
+
+  // @media (max-width: $mobile-width-max) {
+  //   margin-bottom: -18px;
+  // }
 }
 
-.cruise-description__title {
+.cruise-card:hover .cruise-description__title,
+.cruise-card:focus-within .cruise-description__title {
+  top: 0;
+  bottom: auto;
+  // order: 0;
+  // margin-left: 0;
+  // margin-top: 0;
+}
+
+.cruise-description__list {
+  @include list-reset();
+  margin-top: 40px;
+  opacity: 0;
+}
+
+.cruise-card:hover .cruise-description__list,
+.cruise-card:focus-within .cruise-description__list {
+  opacity: 1;
+}
+
+.cruise-description__item-title {
   margin: 0;
   margin-bottom: 1px;
   font-weight: 500;
@@ -15,10 +53,20 @@
   line-height: 20px;
 }
 
-.cruise-description__text {
+.cruise-description__item-text {
   margin: 0;
   margin-bottom: 11px;
   font-size: 14px;
   line-height: 20px;
   color: rgb(216, 216, 217);
+}
+
+.cruise-description__button {
+  opacity: 0;
+  margin-top: 25px;
+}
+
+.cruise-card:hover .cruise-description__button,
+.cruise-card:focus-within .cruise-description__button {
+  opacity: 1;
 }
