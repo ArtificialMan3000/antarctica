@@ -1,48 +1,68 @@
 .cruise-description {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+  min-height: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 29px;
+  padding-bottom: 35px;
+  position: absolute;
+  background-color: transparent;
   color: $brand-second-color;
+
+  @media (max-width: $tablet-width-max) {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+.cruise-card:hover .cruise-description,
+.cruise-card:focus-within .cruise-description {
+  background-color: $brand-color;
 }
 
 .cruise-description__title {
   margin: 0;
-  // margin-left: 5px;
-  // margin-top: auto;
-  // margin-bottom: -13px;
-  position: absolute;
-  bottom: 0;
-  z-index: 1;
+  margin-left: 5px;
+  margin-top: auto;
+  margin-bottom: -13px;
+  position: relative;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
 
-  // @media (max-width: $tablet-width-max) {
-  //   margin-left: 0;
-  //   margin-bottom: -9px;
-  // }
+  @media (max-width: $tablet-width-max) {
+    margin-left: 0;
+    margin-bottom: -9px;
+  }
 
-  // @media (max-width: $mobile-width-max) {
-  //   margin-bottom: -18px;
-  // }
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: -18px;
+  }
 }
 
 .cruise-card:hover .cruise-description__title,
 .cruise-card:focus-within .cruise-description__title {
-  top: 0;
-  bottom: auto;
-  // order: 0;
-  // margin-left: 0;
-  // margin-top: 0;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .cruise-description__list {
   @include list-reset();
-  margin-top: 40px;
-  opacity: 0;
+  display: none;
+  margin-top: 13px;
 }
 
 .cruise-card:hover .cruise-description__list,
 .cruise-card:focus-within .cruise-description__list {
-  opacity: 1;
+  display: block;
 }
 
 .cruise-description__item-title {
@@ -62,11 +82,11 @@
 }
 
 .cruise-description__button {
-  opacity: 0;
-  margin-top: 25px;
+  display: none;
+  margin-top: 14px;
 }
 
 .cruise-card:hover .cruise-description__button,
 .cruise-card:focus-within .cruise-description__button {
-  opacity: 1;
+  display: block;
 }
