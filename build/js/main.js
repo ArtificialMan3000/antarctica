@@ -18,7 +18,7 @@ window.menu = (function () {
   }
   // Логотип в хедере
   if (pageHeader) {
-    var logoLinkImg = pageHeader.querySelector('.logo-link__img');
+    var logoLink = pageHeader.querySelector('.logo-link');
   }
 
   // Прячет меню
@@ -32,8 +32,8 @@ window.menu = (function () {
     if (mainMenu) {
       mainMenu.classList.remove('main-menu--show');
     }
-    if (logoLinkImg) {
-      logoLinkImg.classList.remove('logo-link__img--blue');
+    if (logoLink) {
+      logoLink.classList.remove('logo-link--blue');
     }
     if (pageHeader) {
       pageHeader.classList.remove('page-header--menu-open');
@@ -51,8 +51,8 @@ window.menu = (function () {
     if (mainMenu) {
       mainMenu.classList.add('main-menu--show');
     }
-    if (logoLinkImg) {
-      logoLinkImg.classList.add('logo-link__img--blue');
+    if (logoLink) {
+      logoLink.classList.add('logo-link--blue');
     }
     if (pageHeader) {
       pageHeader.classList.add('page-header--menu-open');

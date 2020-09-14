@@ -61,32 +61,45 @@
   line-height: 21px;
 }
 
+.booking-form form input[type="text"]:hover,
+.booking-form form input[type="text"]:focus,
+.booking-form form input[type="tel"]:hover,
+.booking-form form input[type="tel"]:focus,
+.booking-form form input[type="email"]:hover,
+.booking-form form input[type="email"]:focus {
+  box-shadow: inset 0 0 0 1px $hover-brand-color;
+}
+
 .booking-form form input::placeholder {
   color: $text-color;
 }
 
 .booking-form form input[type="checkbox"] {
-  margin-right: 1px;
   width: 18px;
   height: 18px;
+  vertical-align: baseline;
+  cursor: pointer;
 
   @media (max-width: $mobile-width-max) {
     width: 20px;
     height: 20px;
-    margin-right: 4px;
     vertical-align: top;
   }
 }
 
 .booking-form form input[type="checkbox"] + label {
   display: inline-block;
+  margin-left: -4px;
+  padding-left: 5px;
   border: none;
   vertical-align: text-top;
   font-size: 10px;
   line-height: 13px;
+  cursor: pointer;
 
   @media (max-width: $mobile-width-max) {
     max-width: 165px;
+    padding-left: 8px;
     vertical-align: baseline;
     line-height: 12px;
   }
@@ -101,20 +114,6 @@
     margin-top: 22px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .booking-form__form input[type="text"] + label,
 .booking-form__form input[type="tel"] + label,

@@ -46,7 +46,7 @@ $text-color: $brand-color;
 $text-second-color: $brand-second-color;
 
 // Hover state colors
-$hover-lightness-shift: -20%;
+$hover-lightness-shift: -50%;
 
 $hover-white: scale-color($white, $lightness: $hover-lightness-shift);
 

@@ -19,7 +19,8 @@
   }
 }
 
-.logo-link__img--blue {
+// Для ie11, т.к. он не умеет работать с классами у svg через js
+.logo-link--blue .logo-link__img {
   @media (max-width: $mobile-width-max) {
     fill: $brand-color;
   }

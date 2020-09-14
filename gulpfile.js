@@ -17,19 +17,32 @@ var include = require('posthtml-include');
 var del = require('del');
 var concat = require('gulp-concat');
 
-gulp.task('css', function () {
-  return gulp.src('source/sass/style.scss')
+gulp.task('css', function (done) {
+  gulp.src('source/sass/style.scss')
       .pipe(plumber())
       .pipe(sourcemap.init())
       .pipe(sass())
       .pipe(postcss([
         autoprefixer()
       ]))
-      // .pipe(csso())
+      .pipe(rename('style.css'))
+      .pipe(sourcemap.write('.'))
+      .pipe(gulp.dest('build/css'))
+
+  gulp.src('source/sass/style.scss')
+      .pipe(plumber())
+      .pipe(sourcemap.init())
+      .pipe(sass())
+      .pipe(postcss([
+        autoprefixer()
+      ]))
+      .pipe(csso())
       .pipe(rename('style.min.css'))
       .pipe(sourcemap.write('.'))
       .pipe(gulp.dest('build/css'))
       .pipe(server.stream());
+
+  done();
 });
 
 gulp.task('images', function () {
@@ -44,7 +57,6 @@ gulp.task('images', function () {
           ]
         })
       ]))
-      // .pipe(gulp.dest('source/img'));
       .pipe(gulp.dest('build/img'));
 });
 
@@ -72,7 +84,7 @@ gulp.task('html', function () {
 
 gulp.task('js', function (done) {
   gulp.src(['source/js/menu.js', 'source/js/main.js'])
-      .pipe(concat('script.js'))
+      .pipe(concat('main.js'))
       .pipe(gulp.dest('build/js'));
 
   gulp.src('source/js/vendor/*.js')

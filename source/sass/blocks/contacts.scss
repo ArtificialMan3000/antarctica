@@ -139,3 +139,12 @@
 .contacts__phone-link {
   color: $text-color;
 }
+
+.contacts__phone-link:hover,
+.contacts__phone-link:focus {
+  color: $hover-text-color;
+}
+
+.contacts__phone-link:active {
+  color: $active-text-color;
+}

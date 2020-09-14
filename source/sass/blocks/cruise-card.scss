@@ -22,7 +22,8 @@
 }
 
 .cruise-card:hover,
-.cruise-card:focus-within {
+.cruise-card:focus,
+.cruise-card.focus-within {
   z-index: 1;
 }
 
@@ -49,4 +50,10 @@
   height: 100%;
   object-fit: cover;
   object-position: center center;
+}
+
+.cruise-card__ie11-fix {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
