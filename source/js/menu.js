@@ -12,10 +12,6 @@ window.menu = (function () {
   if (pageHeader) {
     var burger = pageHeader.querySelector('.burger');
   }
-  // Кнопка закрытия меню
-  if (pageHeader) {
-    var menuClose = pageHeader.querySelector('.menu-close');
-  }
   // Логотип в хедере
   if (pageHeader) {
     var logoLink = pageHeader.querySelector('.logo-link');
@@ -24,10 +20,7 @@ window.menu = (function () {
   // Прячет меню
   var closeMainMenu = function () {
     if (burger) {
-      burger.classList.remove('burger--hide');
-    }
-    if (menuClose) {
-      menuClose.classList.add('menu-close--hide');
+      burger.classList.remove('burger--close');
     }
     if (mainMenu) {
       mainMenu.classList.remove('main-menu--show');
@@ -43,10 +36,7 @@ window.menu = (function () {
   // Открывает меню
   var openMainMenu = function () {
     if (burger) {
-      burger.classList.add('burger--hide');
-    }
-    if (menuClose) {
-      menuClose.classList.remove('menu-close--hide');
+      burger.classList.add('burger--close');
     }
     if (mainMenu) {
       mainMenu.classList.add('main-menu--show');
@@ -56,6 +46,18 @@ window.menu = (function () {
     }
     if (pageHeader) {
       pageHeader.classList.add('page-header--menu-open');
+    }
+  };
+
+  // Обработчик клика на бургер
+  var burgerClickHandler = function (evt) {
+    evt.preventDefault();
+    if (burger) {
+      if (burger.classList.contains('burger--close')) {
+        closeMainMenu();
+      } else {
+        openMainMenu();
+      }
     }
   };
 
@@ -69,17 +71,7 @@ window.menu = (function () {
     closeMainMenu();
     // Вешаем на бургер обработчик для открытия меню
     if (burger) {
-      burger.addEventListener('click', function (evt) {
-        evt.preventDefault();
-        openMainMenu();
-      });
-    }
-    // Вешаем на крестик обработчик для закрытия меню
-    if (menuClose) {
-      menuClose.addEventListener('click', function (evt) {
-        evt.preventDefault();
-        closeMainMenu();
-      });
+      burger.addEventListener('click', burgerClickHandler);
     }
   };
 

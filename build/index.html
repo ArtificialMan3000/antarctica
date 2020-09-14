@@ -29,13 +29,9 @@
         <use xlink:href="#sprite-logo"></use>
       </svg>
     </a>
-    <!-- .burger--hide скрывает бургер при открытии меню-->
-    <button class="burger burger--hide" type="button" aria-label="Открыть меню">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
-    <!-- .menu-close--hide скрывает крестик при закрытии меню-->
-    <button class="menu-close" type="button" aria-label="Закрыть меню">
-      <span class="visually-hidden">Закрыть меню</span>
+    <!-- .burger--close меняет бургер на крестик при открытии меню-->
+    <button class="burger burger--close" type="button" aria-label="Открыть / закрыть меню">
+      <span class="visually-hidden">Открыть / закрыть меню</span>
     </button>
     <!-- .main-menu--show показывает меню, переключается с помощью js-->
     <nav class="page-header__menu main-menu main-menu--show">
@@ -416,7 +412,7 @@
         </form>
       </div>
     </section>
-    <section class="contacts">
+    <section id="contacts" class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts__col-left">
         <picture>
