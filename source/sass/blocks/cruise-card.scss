@@ -10,6 +10,7 @@
 
   @media (max-width: $tablet-width-max) {
     width: 45.575%;
+    // max-width: 309px;
     margin-left: 2.212%;
     margin-right: 2.212%;
   }
@@ -23,7 +24,7 @@
 
 .cruise-card:hover,
 .cruise-card:focus,
-.cruise-card.focus-within {
+.cruise-card:focus-within {
   z-index: 1;
 }
 
@@ -43,6 +44,10 @@
   @media (max-width: $mobile-width-max) {
     margin-top: 0;
   }
+}
+
+.cruise-card__picture {
+  width: 100%;
 }
 
 .cruise-card__img {
