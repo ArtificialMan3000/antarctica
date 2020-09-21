@@ -11,6 +11,7 @@
   }
 
   @media (max-width: $mobile-width-max) {
+    align-content: flex-start;
     padding-top: 20px;
     padding-bottom: 20px;
   }
@@ -28,7 +29,9 @@
 
 .page-header--absolute {
   @media (max-width: $mobile-width-max) {
+    height: 100vh;
     position: absolute;
+    overflow: hidden;
   }
 }
 

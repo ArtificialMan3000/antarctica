@@ -50,7 +50,8 @@ $hover-lightness-shift: -50%;
 
 $hover-white: scale-color($white, $lightness: $hover-lightness-shift);
 
-$hover-brand-color: scale-color($brand-color, $lightness: $hover-lightness-shift);
+// $hover-brand-color: scale-color($brand-color, $lightness: -100%);
+$hover-brand-color: #000;
 $hover-brand-second-color: scale-color($brand-second-color, $lightness: $hover-lightness-shift);
 
 $hover-text-color: $hover-brand-color;

@@ -55,6 +55,7 @@
   padding-top: 12px;
   padding-bottom: 10px;
   border: none;
+  border-radius: 0;
   background-color: $brand-second-color;
   color: $text-color;
   font-size: 14px;
@@ -77,22 +78,23 @@
 .booking-form form input[type="checkbox"] {
   width: 18px;
   height: 18px;
-  vertical-align: baseline;
+  vertical-align: middle;
+  border-radius: 0;
   cursor: pointer;
 
   @media (max-width: $mobile-width-max) {
     width: 20px;
     height: 20px;
-    vertical-align: top;
   }
 }
 
 .booking-form form input[type="checkbox"] + label {
   display: inline-block;
+  max-width: calc(100% - 19px);
   margin-left: -4px;
   padding-left: 5px;
   border: none;
-  vertical-align: text-top;
+  vertical-align: middle;
   font-size: 10px;
   line-height: 13px;
   cursor: pointer;
@@ -100,7 +102,6 @@
   @media (max-width: $mobile-width-max) {
     max-width: 165px;
     padding-left: 8px;
-    vertical-align: baseline;
     line-height: 12px;
   }
 }
