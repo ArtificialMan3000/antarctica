@@ -16,6 +16,10 @@ window.menu = (function () {
   if (pageHeader) {
     var logoLink = pageHeader.querySelector('.logo-link');
   }
+  // Пункты меню
+  if (mainMenu) {
+    var menuLinks = mainMenu.querySelectorAll('.main-menu__link');
+  }
 
   // Прячет меню
   var closeMainMenu = function () {
@@ -30,6 +34,14 @@ window.menu = (function () {
     }
     if (pageHeader) {
       pageHeader.classList.remove('page-header--menu-open');
+    }
+    document.body.classList.remove('body-menu-open');
+
+    // Удаляем с пунктов меню обработчик для закрытия меню
+    if (menuLinks) {
+      for (var i = 0; menuLinks.length > i; i++) {
+        menuLinks[i].removeEventListener('click', menuLinksClickHandler);
+      }
     }
   };
 
@@ -47,6 +59,15 @@ window.menu = (function () {
     if (pageHeader) {
       pageHeader.classList.add('page-header--menu-open');
     }
+    window.scroll(0, 0);
+    document.body.classList.add('body-menu-open');
+
+    // Вешаем на пункты меню обработчик для закрытия меню
+    if (menuLinks) {
+      for (var i = 0; menuLinks.length > i; i++) {
+        menuLinks[i].addEventListener('click', menuLinksClickHandler);
+      }
+    }
   };
 
   // Обработчик клика на бургер
@@ -61,6 +82,11 @@ window.menu = (function () {
     }
   };
 
+  // Обработчик клика на пункты меню
+  var menuLinksClickHandler = function () {
+    closeMainMenu();
+  };
+
   // Инициализирует модуль
   var initMainMenu = function () {
     // Убираем хедер из потока
@@ -69,7 +95,7 @@ window.menu = (function () {
     }
     // Прячем меню
     closeMainMenu();
-    // Вешаем на бургер обработчик для открытия меню
+    // Вешаем на бургер обработчик для открытия и закрытия меню
     if (burger) {
       burger.addEventListener('click', burgerClickHandler);
     }
