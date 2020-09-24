@@ -688,11 +688,29 @@ img {
 .socials__link--facebook::before {
   background-image: url("../img/facebook-icon.svg"); }
 
+.socials__link--facebook:hover::before {
+  background-image: url("../img/facebook-icon-hover.svg"); }
+
+.socials__link--facebook:active::before {
+  background-image: url("../img/facebook-icon-active.svg"); }
+
 .socials__link--instagram::before {
   background-image: url("../img/instagram-icon.svg"); }
 
+.socials__link--instagram:hover::before {
+  background-image: url("../img/instagram-icon-hover.svg"); }
+
+.socials__link--instagram:active::before {
+  background-image: url("../img/instagram-icon-active.svg"); }
+
 .socials__link--twitter::before {
   background-image: url("../img/twitter-icon.svg"); }
+
+.socials__link--twitter:hover::before {
+  background-image: url("../img/twitter-icon-hover.svg"); }
+
+.socials__link--twitter:active::before {
+  background-image: url("../img/twitter-icon-active.svg"); }
 
 .advantage {
   max-width: 31.03%;
@@ -825,6 +843,9 @@ img {
 
 .cruise-card:hover,
 .cruise-card:focus,
+.cruise-card.focus-within {
+  z-index: 1; }
+
 .cruise-card:focus-within {
   z-index: 1; }
 
@@ -852,54 +873,64 @@ img {
      object-position: center center; }
 
 .cruise-card__title {
-  width: 100%;
   margin: 0;
   margin-top: auto;
   position: absolute;
   left: 30px;
+  right: 30px;
   bottom: 21px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.318vw;
   line-height: 27px; }
   @media (max-width: 1023px) {
     .cruise-card__title {
       left: 35px;
-      bottom: 27px; } }
+      right: 35px;
+      bottom: 27px;
+      font-size: 18px; } }
   @media (max-width: 767px) {
     .cruise-card__title {
       left: 25px;
-      bottom: 17px; } }
+      right: 25px;
+      bottom: 17px;
+      font-size: 18px; } }
 
 .cruise-description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   min-height: 100%;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 29px;
-  padding-bottom: 35px;
+  padding-left: 9.615%;
+  padding-right: 9.615%;
+  padding-top: 11.153%;
+  padding-bottom: 13.461%;
   background-color: #011c40;
   color: #f9fbfd;
   opacity: 0;
   z-index: 1; }
   @media (max-width: 1023px) {
     .cruise-description {
-      padding-left: 35px;
-      padding-right: 35px; } }
+      padding-left: 11.327%;
+      padding-right: 11.327%;
+      padding-top: 9.385%;
+      padding-bottom: 11.327%; } }
   @media (max-width: 767px) {
     .cruise-description {
-      padding-left: 25px;
-      padding-right: 25px; } }
+      padding-left: 9.259%;
+      padding-right: 9.259%;
+      padding-top: 10.741%;
+      padding-bottom: 12.963%; } }
 
 .cruise-card:hover .cruise-description,
 .cruise-card:focus .cruise-description,
+.cruise-card.focus-within .cruise-description {
+  opacity: 1; }
+
 .cruise-card:focus-within .cruise-description {
   opacity: 1; }
 
@@ -908,8 +939,11 @@ img {
   margin: 0;
   margin-bottom: 13px;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 27px; }
+  font-size: 1.318vw;
+  line-height: 1.5; }
+  @media (max-width: 1023px) {
+    .cruise-description__title {
+      font-size: 18px; } }
 
 .cruise-description__list {
   list-style-type: none;
@@ -927,14 +961,20 @@ img {
   margin: 0;
   margin-bottom: 1px;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 20px; }
+  font-size: 1.025vw;
+  line-height: 1.429; }
+  @media (max-width: 1023px) {
+    .cruise-description__item-title {
+      font-size: 14px; } }
 
 .cruise-description__item-text {
   margin: 0;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 1.025vw;
+  line-height: 1.429;
   color: #d8d8d9; }
+  @media (max-width: 1023px) {
+    .cruise-description__item-text {
+      font-size: 14px; } }
 
 .cruise-description__button {
   margin-top: auto; }
