@@ -688,11 +688,29 @@ img {
 .socials__link--facebook::before {
   background-image: url("../img/facebook-icon.svg"); }
 
+.socials__link--facebook:hover::before {
+  background-image: url("../img/facebook-icon-hover.svg"); }
+
+.socials__link--facebook:active::before {
+  background-image: url("../img/facebook-icon-active.svg"); }
+
 .socials__link--instagram::before {
   background-image: url("../img/instagram-icon.svg"); }
 
+.socials__link--instagram:hover::before {
+  background-image: url("../img/instagram-icon-hover.svg"); }
+
+.socials__link--instagram:active::before {
+  background-image: url("../img/instagram-icon-active.svg"); }
+
 .socials__link--twitter::before {
   background-image: url("../img/twitter-icon.svg"); }
+
+.socials__link--twitter:hover::before {
+  background-image: url("../img/twitter-icon-hover.svg"); }
+
+.socials__link--twitter:active::before {
+  background-image: url("../img/twitter-icon-active.svg"); }
 
 .advantage {
   max-width: 31.03%;
